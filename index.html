@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscoito da sorte</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <audio src="./The Last Of us - Theme song.mp3"  volume="10" loop="true" autoplay="true"></audio>
+    <main class="main1">
+        <div class="screen1">
+            <h1>How lucky are you today?</h1>
+            <p>Open the cookie and find out!</p>
+            
+            <img  onmouseover="tremer()" onclick="handleClick()" class="imgFechado musica" src="./Ebene 4.svg" alt="biscoito da sorte">
+            
+            <audio class='audio' src="./biscoito_crocante.mp3" ></audio>
+        </div>
+    </main>
+
+    <main class="main2 hide">
+        <div class="screen2">
+            <h1>Here's your luck for today:</h1>
+            <div class="sorte">
+                <p class="sorteP" id="msg">If someone is so tired that they can't give you a smile, leave them yours.</p>
+            
+            </div>
+            <img class="imgAberto" src="./opened-cookie.svg" alt="biscoito aberto">
+            <button id="btnTryAgain">
+                <p class="buttonP">Open another cookie</p>
+            </button>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
